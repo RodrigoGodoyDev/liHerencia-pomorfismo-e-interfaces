@@ -1,0 +1,28 @@
+public class Herencia {
+    public static void main(String[] args) {
+        Coche coche = new Coche();
+        coche.velocidadMaxima = 14;
+        coche.matricula = "ABC 1234 ES";
+
+        System.out.println(coche.compruebaMatricula("XXX"));
+    }
+}
+
+class Vehiculo {
+    int velocidadMaxima;
+    String matricula;
+    public boolean compruebaMatricula(String matricula) {
+        if (matricula == "XXX")
+            return true;{
+            }
+            return false;
+    }
+ }
+
+class Coche extends Vehiculo {
+
+}
+
+class CocheElectrico extends Coche {
+
+}
