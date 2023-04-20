@@ -3,6 +3,9 @@ public class Herencia {
         Coche coche = new Coche();
         coche.setSonido ("BRRRR");
         System.out.println(coche.getSonido());
+        Moto moto = new Moto();
+        moto.setSonido ("mini brrrrr");
+        System.out.println(moto.getSonido());
 
     }
 }
@@ -23,7 +26,7 @@ abstract class Vehiculo {
 
 class Coche extends Vehiculo {
     public String getSonido(){
-        return "Soy un super sonido: " + this.sonido;
+        return "Soy un super sonido" + " " + this.sonido;
     }
     public void setSonido(String sonido){
     this.sonido = sonido;
@@ -32,7 +35,7 @@ class Coche extends Vehiculo {
 
 class Moto extends Vehiculo {
     public String getSonido(){
-        return "Soy un pequeño sonido: " + this.sonido;
+        return "Soy un pequeño sonido" + " " + this.sonido;
     }
     public void setSonido(String sonido){
         this.sonido = sonido;
